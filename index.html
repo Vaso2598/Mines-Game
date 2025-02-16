@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mines</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<section>
+			<h1>Mines</h1>
+			<div id="game"></div>
+			<div class="lowerPanel">
+				<p id="balance">Total Money: 0$</p>
+				<div>
+					<button id="-10" class="nes-btn is-primary">-10$</button>
+					<p id="betAmount">Bet: 0$</p>
+					<button id="+10" class="nes-btn is-primary">+10$</button>
+				</div>
+				<button id="start" class="nes-btn is-success">Start Game</button>
+			</div>
+		</section>
+		<script src="./src/js/index.js" type="module"></script>
+	</body>
+</html>

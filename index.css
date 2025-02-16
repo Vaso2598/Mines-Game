@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "kongtext";
+	src: url("./src/fonts/kongtext.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	font-family: "kongtext";
+}
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #3c4665 !important;
+	color: #e0e1dd !important;
+	overflow: auto;
+}
+section {
+	padding: 50px 100px;
+}
+h1 {
+	display: flex;
+	justify-content: center;
+}
+#game {
+	display: flex;
+	justify-content: center;
+}
+.lowerPanel {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #e0e1dd !important;
+}
+.lowerPanel div {
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.lowerPanel p {
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	body {
+		height: 100dvh;
+		overflow: hidden;
+	}
+	section {
+		height: 100%;
+		display: flex !important;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 50px 0px;
+	}
+	#game {
+		display: flex;
+		justify-content: center;
+	}
+	canvas {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	.lowerPanel {
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		color: #e0e1dd !important;
+	}
+	.lowerPanel div {
+		width: 400px;
+		max-width: 400px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.lowerPanel p {
+		margin: 0;
+	}
+}
