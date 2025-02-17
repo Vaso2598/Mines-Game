@@ -15,25 +15,25 @@ class Assets {
 
 	async loadTextures() {
 		this.textures = {
-			stoneMiddle: await PIXI.Assets.load("./src/sprites/StoneMiddle.png"),
-			stoneCornerTR: await PIXI.Assets.load("./src/sprites/StoneCornerTR.png"),
-			stoneCornerTL: await PIXI.Assets.load("./src/sprites/StoneCornerTL.png"),
-			stoneCornerBR: await PIXI.Assets.load("./src/sprites/StoneCornerBR.png"),
-			stoneCornerBL: await PIXI.Assets.load("./src/sprites/StoneCornerBL.png"),
-			stoneSlab: await PIXI.Assets.load("./src/sprites/StoneSlab.png"),
-			stoneRubble: await PIXI.Assets.load("./src/sprites/StoneBreak.png"),
-			bomb: await PIXI.Assets.load("./src/sprites/Bomb.png"),
-			coin: await PIXI.Assets.load("./src/sprites/Coin.png"),
+			stoneMiddle: await PIXI.Assets.load("./sprites/StoneMiddle.png"),
+			stoneCornerTR: await PIXI.Assets.load("./sprites/StoneCornerTR.png"),
+			stoneCornerTL: await PIXI.Assets.load("./sprites/StoneCornerTL.png"),
+			stoneCornerBR: await PIXI.Assets.load("./sprites/StoneCornerBR.png"),
+			stoneCornerBL: await PIXI.Assets.load("./sprites/StoneCornerBL.png"),
+			stoneSlab: await PIXI.Assets.load("./sprites/StoneSlab.png"),
+			stoneRubble: await PIXI.Assets.load("./sprites/StoneBreak.png"),
+			bomb: await PIXI.Assets.load("./sprites/Bomb.png"),
+			coin: await PIXI.Assets.load("./sprites/Coin.png"),
 		};
 	}
 
 	loadSounds() {
 		this.sounds = {
-			coin: new Howl({src: "./src/sounds/sfx_coin_double1.wav", volume: 0.2}),
-			bomb: new Howl({src: "src/sounds/sfx_exp_medium1.wav", volume: 0.2}),
-			cashout: new Howl({src: "src/sounds/sfx_sounds_fanfare3.wav", volume: 0.2}),
-			error: new Howl({src: "src/sounds/sfx_sounds_error3.wav", volume: 0.2}),
-			button: new Howl({src: "src/sounds/sfx_menu_move4.wav", volume: 0.2}),
+			coin: new Howl({src: "./sounds/sfx_coin_double1.wav", volume: 0.2}),
+			bomb: new Howl({src: "./sounds/sfx_exp_medium1.wav", volume: 0.2}),
+			cashout: new Howl({src: "./sounds/sfx_sounds_fanfare3.wav", volume: 0.2}),
+			error: new Howl({src: "./sounds/sfx_sounds_error3.wav", volume: 0.2}),
+			button: new Howl({src: "./sounds/sfx_menu_move4.wav", volume: 0.2}),
 		};
 	}
 
